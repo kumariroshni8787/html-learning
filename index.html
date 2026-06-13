@@ -1,150 +1,149 @@
 
-```html
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Day 3 - HTML Tables and Forms</title>
-
-<style>
-body{
-    font-family: Arial, sans-serif;
-    margin: 20px;
-}
-
-h1,h2{
-    text-align:center;
-}
-
-form{
-    width:50%;
-    margin:auto;
-    padding:20px;
-    border:1px solid #ccc;
-    border-radius:10px;
-}
-
-label{
-    display:block;
-    margin-top:10px;
-}
-
-input, textarea{
-    width:100%;
-    padding:8px;
-    margin-top:5px;
-}
-
-button{
-    margin-top:15px;
-    padding:10px 20px;
-    cursor:pointer;
-}
-
-table{
-    width:100%;
-    border-collapse:collapse;
-    margin-top:30px;
-}
-
-table, th, td{
-    border:1px solid black;
-}
-
-th, td{
-    padding:10px;
-    text-align:center;
-}
-
-caption{
-    font-size:20px;
-    font-weight:bold;
-    margin-bottom:10px;
-}
-
-tfoot{
-    background:#f0f0f0;
-    font-weight:bold;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 4 Blog Layout</title>
 </head>
 
 <body>
 
-<h1>Student Registration Form</h1>
+    <!-- Website Header -->
+    <header>
+        <h1>My Learning Blog</h1>
+        <p>Day 4 - Advanced Forms & Semantic HTML</p>
+    </header>
 
-<form>
+    <!-- Navigation Menu -->
+    <nav>
+        <a href="#">Home</a> |
+        <a href="#">Blogs</a> |
+        <a href="#">About</a> |
+        <a href="#">Contact</a>
+    </nav>
 
-<label for="name">Student Name</label>
-<input type="text" id="name">
+    <!-- Main Content Area -->
+    <main>
 
-<label for="email">Email</label>
-<input type="email" id="email">
+        <!-- Blog Section -->
+        <section>
 
-<label for="phone">Phone Number</label>
-<input type="tel" id="phone">
+            <!-- Blog Article 1 -->
+            <article>
+                <h2>Learning HTML Forms</h2>
+                <p>
+                    Today I learned advanced form elements
+                    like select, option, optgroup,
+                    fieldset, legend and datalist.
+                </p>
+            </article>
 
-<label for="course">Course</label>
-<input type="text" id="course">
+            <!-- Blog Article 2 -->
+            <article>
+                <h2>Semantic HTML</h2>
+                <p>
+                    Semantic tags make webpages
+                    more meaningful and accessible.
+                </p>
+            </article>
 
-<label for="address">Address</label>
-<textarea id="address" rows="4"></textarea>
+        </section>
 
-<button type="submit">Register</button>
+        <!-- Sidebar -->
+        <aside>
 
-</form>
+            <h3>Related Topics</h3>
 
-<h2>Student Data Table</h2>
+            <ul>
+                <li>Forms</li>
+                <li>HTML5</li>
+                <li>Accessibility</li>
+            </ul>
 
-<table>
+        </aside>
 
-<caption>Student Information</caption>
+        <!-- User Information Form -->
+        <section>
 
-<thead>
-<tr>
-<th>ID</th>
-<th>Name</th>
-<th>Course</th>
-<th>Age</th>
-<th>Marks</th>
-</tr>
-</thead>
+            <h2>User Information</h2>
 
-<tbody>
-<tr>
-<td>101</td>
-<td>Rahul</td>
-<td>BCA</td>
-<td>20</td>
-<td>85</td>
-</tr>
+            <form>
 
-<tr>
-<td>102</td>
-<td>Priya</td>
-<td>B.Tech</td>
-<td>21</td>
-<td>90</td>
-</tr>
+                <!-- Fieldset Group -->
+                <fieldset>
 
-<tr>
-<td>103</td>
-<td>Aman</td>
-<td>BBA</td>
-<td>22</td>
-<td>88</td>
-</tr>
-</tbody>
+                    <!-- Fieldset Title -->
+                    <legend>Personal Details</legend>
 
-<tfoot>
-<tr>
-<td colspan="5">Total Students: 3</td>
-</tr>
-</tfoot>
+                    <label>Name:</label>
+                    <input type="text"><br><br>
 
-</table>
+                    <label>Email:</label>
+                    <input type="email"><br><br>
+
+                </fieldset>
+
+                <br>
+
+                <!-- Category Dropdown -->
+                <label>Choose Category:</label>
+
+                <select>
+                    <option>HTML</option>
+                    <option>CSS</option>
+                    <option>JavaScript</option>
+                </select>
+
+                <br><br>
+
+                <!-- Country Dropdown using Optgroup -->
+                <label>Select Country:</label>
+
+                <select>
+
+                    <optgroup label="Asia">
+                        <option>India</option>
+                        <option>Japan</option>
+                    </optgroup>
+
+                    <optgroup label="Europe">
+                        <option>France</option>
+                        <option>Germany</option>
+                    </optgroup>
+
+                </select>
+
+                <br><br>
+
+                <!-- Search Suggestions -->
+                <label>Search Topic:</label>
+
+                <input type="text" list="topics">
+
+                <datalist id="topics">
+                    <option value="HTML">
+                    <option value="CSS">
+                    <option value="JavaScript">
+                    <option value="React">
+                </datalist>
+
+                <br><br>
+
+                <button type="submit">Submit</button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 My Learning Blog</p>
+    </footer>
 
 </body>
+
 </html>
-```
