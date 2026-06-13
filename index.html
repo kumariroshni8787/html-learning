@@ -1,149 +1,149 @@
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Day 4 Blog Layout</title>
-</head>
 
+    <title>My Homepage Clone</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
 
-    <!-- Website Header -->
+    <!-- Header -->
     <header>
-        <h1>My Learning Blog</h1>
-        <p>Day 4 - Advanced Forms & Semantic HTML</p>
+        <h1>My Website</h1>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
     </header>
 
-    <!-- Navigation Menu -->
-    <nav>
-        <a href="#">Home</a> |
-        <a href="#">Blogs</a> |
-        <a href="#">About</a> |
-        <a href="#">Contact</a>
-    </nav>
-
-    <!-- Main Content Area -->
+    <!-- Main Content -->
     <main>
 
-        <!-- Blog Section -->
+        <!-- Hero Section -->
+        <section class="hero">
+
+            <h2>Welcome to My Website</h2>
+
+            <p>
+                Learn HTML, CSS and JavaScript with projects.
+            </p>
+
+            <button onclick="showMessage()">
+                Click Me
+            </button>
+
+            <!-- Responsive Image -->
+            <picture>
+
+                <source
+                    media="(max-width:600px)"
+                    srcset="https://picsum.photos/400/250">
+
+                <img
+                    src="https://picsum.photos/800/400"
+                    alt="Hero Image">
+
+            </picture>
+
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+
+            <h2>About Us</h2>
+
+            <p>
+                We create modern and responsive websites using HTML, CSS and JavaScript.
+            </p>
+
+        </section>
+
+        <!-- Services Section -->
+        <section id="services">
+
+            <h2>Our Services</h2>
+
+            <article>
+                <h3>Web Design</h3>
+                <p>Beautiful and responsive designs.</p>
+            </article>
+
+            <article>
+                <h3>Development</h3>
+                <p>Fast and secure websites.</p>
+            </article>
+
+        </section>
+
+        <!-- Embedded Content -->
         <section>
 
-            <!-- Blog Article 1 -->
-            <article>
-                <h2>Learning HTML Forms</h2>
-                <p>
-                    Today I learned advanced form elements
-                    like select, option, optgroup,
-                    fieldset, legend and datalist.
-                </p>
-            </article>
+            <h2>Our Location</h2>
 
-            <!-- Blog Article 2 -->
-            <article>
-                <h2>Semantic HTML</h2>
-                <p>
-                    Semantic tags make webpages
-                    more meaningful and accessible.
-                </p>
-            </article>
+            <iframe
+                src="https://www.google.com/maps/embed?pb="
+                width="100%"
+                height="300"
+                style="border:0;"
+                loading="lazy">
+            </iframe>
 
         </section>
 
         <!-- Sidebar -->
         <aside>
 
-            <h3>Related Topics</h3>
+            <h3>Latest Updates</h3>
 
             <ul>
-                <li>Forms</li>
-                <li>HTML5</li>
-                <li>Accessibility</li>
+                <li>HTML Course</li>
+                <li>CSS Course</li>
+                <li>JavaScript Course</li>
             </ul>
 
         </aside>
 
-        <!-- User Information Form -->
-        <section>
-
-            <h2>User Information</h2>
-
-            <form>
-
-                <!-- Fieldset Group -->
-                <fieldset>
-
-                    <!-- Fieldset Title -->
-                    <legend>Personal Details</legend>
-
-                    <label>Name:</label>
-                    <input type="text"><br><br>
-
-                    <label>Email:</label>
-                    <input type="email"><br><br>
-
-                </fieldset>
-
-                <br>
-
-                <!-- Category Dropdown -->
-                <label>Choose Category:</label>
-
-                <select>
-                    <option>HTML</option>
-                    <option>CSS</option>
-                    <option>JavaScript</option>
-                </select>
-
-                <br><br>
-
-                <!-- Country Dropdown using Optgroup -->
-                <label>Select Country:</label>
-
-                <select>
-
-                    <optgroup label="Asia">
-                        <option>India</option>
-                        <option>Japan</option>
-                    </optgroup>
-
-                    <optgroup label="Europe">
-                        <option>France</option>
-                        <option>Germany</option>
-                    </optgroup>
-
-                </select>
-
-                <br><br>
-
-                <!-- Search Suggestions -->
-                <label>Search Topic:</label>
-
-                <input type="text" list="topics">
-
-                <datalist id="topics">
-                    <option value="HTML">
-                    <option value="CSS">
-                    <option value="JavaScript">
-                    <option value="React">
-                </datalist>
-
-                <br><br>
-
-                <button type="submit">Submit</button>
-
-            </form>
-
-        </section>
-
     </main>
+
+    <!-- Contact -->
+    <section id="contact">
+
+        <h2>Contact Us</h2>
+
+        <form>
+
+            <input
+                type="text"
+                placeholder="Your Name">
+
+            <input
+                type="email"
+                placeholder="Your Email">
+
+            <button type="submit">
+                Send
+            </button>
+
+        </form>
+
+    </section>
 
     <!-- Footer -->
     <footer>
-        <p>© 2025 My Learning Blog</p>
+
+        <p>
+            © 2026 My Website | All Rights Reserved
+        </p>
+
     </footer>
 
-</body>
+    <script src="script.js"></script>
 
+</body>
 </html>

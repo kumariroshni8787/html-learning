@@ -1169,3 +1169,406 @@ Create a blog website that includes:
 | Using section without heading     | Add meaningful headings      |
 
 
+
+# 📅 Day 5 - Embedded Elements, Graphics & Meta Tags
+
+## 📖 Introduction
+
+On Day 5, I learned how to embed external content, create graphics, and manage webpage settings using HTML.
+
+These tags help add multimedia, external resources, responsive images, graphics, and website configuration.
+
+---
+
+# 🔌 Embedded & Graphics Tags
+
+## 1. `<iframe>`
+
+### Definition
+
+The `<iframe>` tag is used to embed another webpage inside the current webpage.
+
+### Syntax
+
+```html
+<iframe src="url"></iframe>
+```
+
+### Example
+
+```html
+<iframe
+  src="https://www.example.com"
+  width="600"
+  height="300">
+</iframe>
+```
+
+### Uses
+
+* YouTube Videos
+* Google Maps
+* External Websites
+
+---
+
+## 2. `<embed>`
+
+### Definition
+
+The `<embed>` tag is used to embed external content such as PDFs, audio, or videos.
+
+### Syntax
+
+```html
+<embed src="file.pdf">
+```
+
+### Example
+
+```html
+<embed
+  src="document.pdf"
+  width="500"
+  height="400">
+```
+
+---
+
+## 3. `<object>`
+
+### Definition
+
+The `<object>` tag is used to embed multimedia resources and external files.
+
+### Syntax
+
+```html
+<object data="file.pdf"></object>
+```
+
+### Example
+
+```html
+<object
+  data="document.pdf"
+  width="500"
+  height="400">
+</object>
+```
+
+---
+
+## 4. `<canvas>`
+
+### Definition
+
+The `<canvas>` tag provides a drawing area for graphics using JavaScript.
+
+### Syntax
+
+```html
+<canvas id="myCanvas"></canvas>
+```
+
+### Example
+
+```html
+<canvas
+  id="myCanvas"
+  width="300"
+  height="200">
+</canvas>
+```
+
+### Uses
+
+* Drawing
+* Animations
+* Games
+* Charts
+
+---
+
+## 5. `<svg>`
+
+### Definition
+
+The `<svg>` tag is used to create scalable vector graphics.
+
+### Syntax
+
+```html
+<svg></svg>
+```
+
+### Example
+
+```html
+<svg width="100" height="100">
+  <circle
+    cx="50"
+    cy="50"
+    r="40"
+    fill="blue" />
+</svg>
+```
+
+### Uses
+
+* Logos
+* Icons
+* Shapes
+* Illustrations
+
+---
+
+## 6. `<picture>`
+
+### Definition
+
+The `<picture>` tag provides responsive images for different screen sizes.
+
+### Syntax
+
+```html
+<picture>
+  <source>
+  <img>
+</picture>
+```
+
+### Example
+
+```html
+<picture>
+  <source
+    media="(max-width:600px)"
+    srcset="mobile.jpg">
+
+  <img
+    src="desktop.jpg"
+    alt="Responsive Image">
+</picture>
+```
+
+---
+
+## 7. `<map>`
+
+### Definition
+
+The `<map>` tag defines an image map.
+
+### Syntax
+
+```html
+<map name="mymap">
+</map>
+```
+
+---
+
+## 8. `<area>`
+
+### Definition
+
+The `<area>` tag defines clickable areas inside an image map.
+
+### Example
+
+```html
+<img
+  src="world-map.jpg"
+  usemap="#worldmap">
+
+<map name="worldmap">
+  <area
+    shape="rect"
+    coords="0,0,100,100"
+    href="india.html">
+</map>
+```
+
+---
+
+# ⚙️ Meta & Script Tags
+
+## 9. `<meta>`
+
+### Definition
+
+The `<meta>` tag provides information about the webpage.
+
+### Example
+
+```html
+<meta charset="UTF-8">
+
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1.0">
+```
+
+### Uses
+
+* SEO
+* Character Encoding
+* Mobile Responsiveness
+
+---
+
+## 10. `<link>`
+
+### Definition
+
+The `<link>` tag connects external resources such as CSS files.
+
+### Example
+
+```html
+<link
+  rel="stylesheet"
+  href="style.css">
+```
+
+---
+
+## 11. `<style>`
+
+### Definition
+
+The `<style>` tag is used to write internal CSS.
+
+### Example
+
+```html
+<style>
+h1{
+  color: blue;
+}
+</style>
+```
+
+---
+
+## 12. `<script>`
+
+### Definition
+
+The `<script>` tag is used to add JavaScript.
+
+### Example
+
+```html
+<script>
+alert("Hello World");
+</script>
+```
+
+### Uses
+
+* Interactivity
+* Form Validation
+* Dynamic Content
+
+---
+
+## 13. `<noscript>`
+
+### Definition
+
+The `<noscript>` tag displays content when JavaScript is disabled.
+
+### Example
+
+```html
+<noscript>
+Please enable JavaScript.
+</noscript>
+```
+
+---
+
+# 🛠 Practice Project
+
+## Simple Homepage Clone
+
+### Features
+
+✅ Header
+
+✅ Navigation Bar
+
+✅ Hero Section
+
+✅ About Section
+
+✅ Services Section
+
+✅ Contact Section
+
+✅ Footer
+
+### Additional Requirements
+
+* Use `<iframe>` for Google Maps
+* Use `<picture>` for responsive images
+* Use `<svg>` for logo design
+* Use `<meta>` tags for responsiveness
+* Use `<script>` for simple interaction
+
+---
+
+# 📋 Day 5 Summary
+
+Today I learned:
+
+✅ Embedding webpages using `<iframe>`
+
+✅ Embedding external files using `<embed>`
+
+✅ Using `<object>` for multimedia
+
+✅ Drawing graphics with `<canvas>`
+
+✅ Creating vector graphics using `<svg>`
+
+✅ Responsive images using `<picture>`
+
+✅ Creating image maps with `<map>` and `<area>`
+
+✅ Using `<meta>` tags for webpage information
+
+✅ Linking external CSS with `<link>`
+
+✅ Writing internal CSS using `<style>`
+
+✅ Adding JavaScript using `<script>`
+
+✅ Providing fallback content using `<noscript>`
+
+---
+
+# 🎯 Key Takeaways
+
+* Embedded tags allow external content integration.
+* SVG graphics remain sharp at any size.
+* Canvas is useful for dynamic graphics.
+* Picture improves responsive design.
+* Meta tags improve SEO and mobile compatibility.
+* Script enables webpage interactivity.
+* Noscript provides fallback support.
+
+---
+
+# 🚀 Mini Project Completed
+
+A simple homepage clone using:
+
+* Semantic HTML
+* Responsive Images
+* Embedded Content
+* CSS Linking
+* JavaScript Integration
+
