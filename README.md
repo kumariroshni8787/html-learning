@@ -240,3 +240,371 @@ Today I learned:
 - Track tag
 
 I also created a My Profile Page using links, images, and lists.
+
+
+
+
+# 📅 Day 3 - HTML Tables and Forms
+
+## 📖 Introduction
+
+On Day 3, I learned how to create tables and forms in HTML.
+
+Tables help organize data into rows and columns, while forms allow users to enter and submit information.
+
+---
+
+# 📚 HTML Table Tags
+
+## 1. `<table>`
+
+### Definition
+
+The `<table>` tag is used to create a table in HTML.
+
+### Syntax
+
+```html
+<table>
+  ...
+</table>
+```
+
+### Example
+
+```html
+<table>
+  <tr>
+    <td>Name</td>
+    <td>Age</td>
+  </tr>
+</table>
+```
+
+---
+
+## 2. `<tr>`
+
+### Definition
+
+The `<tr>` tag stands for Table Row. It creates a row inside a table.
+
+### Syntax
+
+```html
+<tr>
+  ...
+</tr>
+```
+
+### Example
+
+```html
+<tr>
+  <td>John</td>
+  <td>20</td>
+</tr>
+```
+
+---
+
+## 3. `<td>`
+
+### Definition
+
+The `<td>` tag stands for Table Data. It creates a normal cell inside a row.
+
+### Syntax
+
+```html
+<td>Data</td>
+```
+
+### Example
+
+```html
+<td>John</td>
+```
+
+---
+
+## 4. `<th>`
+
+### Definition
+
+The `<th>` tag stands for Table Header. It creates a heading cell.
+
+### Syntax
+
+```html
+<th>Heading</th>
+```
+
+### Example
+
+```html
+<th>Name</th>
+<th>Age</th>
+```
+
+---
+
+## 5. `<thead>`
+
+### Definition
+
+The `<thead>` tag groups the header section of a table.
+
+### Syntax
+
+```html
+<thead>
+  ...
+</thead>
+```
+
+### Example
+
+```html
+<thead>
+  <tr>
+    <th>Name</th>
+    <th>Age</th>
+  </tr>
+</thead>
+```
+
+---
+
+## 6. `<tbody>`
+
+### Definition
+
+The `<tbody>` tag contains the main table data.
+
+### Syntax
+
+```html
+<tbody>
+  ...
+</tbody>
+```
+
+### Example
+
+```html
+<tbody>
+  <tr>
+    <td>John</td>
+    <td>20</td>
+  </tr>
+</tbody>
+```
+
+---
+
+## 7. `<tfoot>`
+
+### Definition
+
+The `<tfoot>` tag defines the footer section of a table.
+
+### Syntax
+
+```html
+<tfoot>
+  ...
+</tfoot>
+```
+
+### Example
+
+```html
+<tfoot>
+  <tr>
+    <td colspan="2">End of Table</td>
+  </tr>
+</tfoot>
+```
+
+---
+
+## 8. `<caption>`
+
+### Definition
+
+The `<caption>` tag provides a title for a table.
+
+### Syntax
+
+```html
+<caption>Table Title</caption>
+```
+
+### Example
+
+```html
+<caption>Student Data</caption>
+```
+
+---
+
+# 📚 HTML Form Tags
+
+## 9. `<form>`
+
+### Definition
+
+The `<form>` tag is used to collect user input.
+
+### Syntax
+
+```html
+<form>
+  ...
+</form>
+```
+
+### Example
+
+```html
+<form>
+  <input type="text">
+</form>
+```
+
+---
+
+## 10. `<input>`
+
+### Definition
+
+The `<input>` tag creates input fields for users.
+
+### Syntax
+
+```html
+<input type="text">
+```
+
+### Example
+
+```html
+<input type="email" placeholder="Enter Email">
+```
+
+---
+
+## 11. `<label>`
+
+### Definition
+
+The `<label>` tag provides a text label for form elements.
+
+### Syntax
+
+```html
+<label>Name</label>
+```
+
+### Example
+
+```html
+<label for="name">Student Name</label>
+```
+
+---
+
+## 12. `<button>`
+
+### Definition
+
+The `<button>` tag creates a clickable button.
+
+### Syntax
+
+```html
+<button>Submit</button>
+```
+
+### Example
+
+```html
+<button type="submit">Register</button>
+```
+
+---
+
+## 13. `<textarea>`
+
+### Definition
+
+The `<textarea>` tag creates a multi-line text input area.
+
+### Syntax
+
+```html
+<textarea></textarea>
+```
+
+### Example
+
+```html
+<textarea placeholder="Write here"></textarea>
+```
+
+---
+
+# 🛠 Practice Project 1 - Student Registration Form
+
+### Features
+
+* Student Name
+* Email
+* Phone Number
+* Course
+* Address
+* Submit Button
+
+---
+
+# 🛠 Practice Project 2 - Student Data Table
+
+### Features
+
+* Student ID
+* Name
+* Course
+* Age
+* Marks
+* Footer Row
+
+
+# 📋 Day 3 Summary
+
+Today I learned:
+
+✅ Creating tables using `<table>`
+
+✅ Creating rows using `<tr>`
+
+✅ Adding table data using `<td>`
+
+✅ Creating table headings using `<th>`
+
+✅ Organizing tables using `<thead>`, `<tbody>`, and `<tfoot>`
+
+✅ Adding table titles using `<caption>`
+
+✅ Creating forms using `<form>`
+
+✅ Taking user input using `<input>`
+
+✅ Adding labels using `<label>`
+
+✅ Creating buttons using `<button>`
+
+✅ Creating multi-line text areas using `<textarea>`
+
+
+

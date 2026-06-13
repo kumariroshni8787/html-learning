@@ -1,53 +1,150 @@
-<!DOCTYPE html>
-<html>
 
+```html
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>My Profile Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 3 - HTML Tables and Forms</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1,h2{
+    text-align:center;
+}
+
+form{
+    width:50%;
+    margin:auto;
+    padding:20px;
+    border:1px solid #ccc;
+    border-radius:10px;
+}
+
+label{
+    display:block;
+    margin-top:10px;
+}
+
+input, textarea{
+    width:100%;
+    padding:8px;
+    margin-top:5px;
+}
+
+button{
+    margin-top:15px;
+    padding:10px 20px;
+    cursor:pointer;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:30px;
+}
+
+table, th, td{
+    border:1px solid black;
+}
+
+th, td{
+    padding:10px;
+    text-align:center;
+}
+
+caption{
+    font-size:20px;
+    font-weight:bold;
+    margin-bottom:10px;
+}
+
+tfoot{
+    background:#f0f0f0;
+    font-weight:bold;
+}
+</style>
 </head>
 
 <body>
 
-    <h1>Roshni Kumari</h1>
+<h1>Student Registration Form</h1>
 
-    <img src="image.png" alt="Profile Photo" width="200">
+<form>
 
-    <hr>
+<label for="name">Student Name</label>
+<input type="text" id="name">
 
-    <h2>About Me</h2>
+<label for="email">Email</label>
+<input type="email" id="email">
 
-    <p>
-        I am learning HTML and Web Development.
-    </p>
+<label for="phone">Phone Number</label>
+<input type="tel" id="phone">
 
-    <h2>My Skills</h2>
+<label for="course">Course</label>
+<input type="text" id="course">
 
-    <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-    </ul>
+<label for="address">Address</label>
+<textarea id="address" rows="4"></textarea>
 
-    <h2>Learning Roadmap</h2>
+<button type="submit">Register</button>
 
-    <ol>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>React</li>
-    </ol>
+</form>
 
-    <h2>Useful Links</h2>
+<h2>Student Data Table</h2>
 
-    <a href="https://github.com" target="_blank">
-        My GitHub
-    </a>
+<table>
 
-    <br><br>
+<caption>Student Information</caption>
 
-    <a href="https://www.linkedin.com" target="_blank">
-        My LinkedIn
-    </a>
+<thead>
+<tr>
+<th>ID</th>
+<th>Name</th>
+<th>Course</th>
+<th>Age</th>
+<th>Marks</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>101</td>
+<td>Rahul</td>
+<td>BCA</td>
+<td>20</td>
+<td>85</td>
+</tr>
+
+<tr>
+<td>102</td>
+<td>Priya</td>
+<td>B.Tech</td>
+<td>21</td>
+<td>90</td>
+</tr>
+
+<tr>
+<td>103</td>
+<td>Aman</td>
+<td>BBA</td>
+<td>22</td>
+<td>88</td>
+</tr>
+</tbody>
+
+<tfoot>
+<tr>
+<td colspan="5">Total Students: 3</td>
+</tr>
+</tfoot>
+
+</table>
 
 </body>
-
 </html>
+```
