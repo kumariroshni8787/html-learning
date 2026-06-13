@@ -107,3 +107,136 @@ Today I learned:
 - Small tag
 
 I also created a simple About Myself webpage.
+
+
+## Day 2 - Links, Lists & Media
+
+📚 Introduction
+
+In this lesson, we learn how to create links, organize content using lists, and add media such as images, audio, and videos to a webpage.
+
+🔗 Links
+<a> Tag
+
+Used to create hyperlinks.
+
+<a href="https://www.google.com">Visit Google</a>
+
+Open Link in New Tab
+
+<a href="https://www.google.com" target="_blank">Visit Google</a>
+
+## 📃 Lists
+
+### Unordered List <ul>
+
+Displays items with bullet points.
+
+<ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+</ul>
+Output
+HTML
+CSS
+JavaScript
+
+### Ordered List <ol>
+
+Displays items with numbers.
+
+<ol>
+    <li>Wake Up</li>
+    <li>Study HTML</li>
+    <li>Practice Coding</li>
+</ol>
+Output
+Wake Up
+Study HTML
+Practice Coding
+
+List Item <li>
+
+Used inside <ul> and <ol>.
+
+<li>HTML</li>
+
+Description List
+<dl> - Description List
+<dt> - Description Term
+<dd> - Description Definition
+<dl>
+    <dt>HTML</dt>
+    <dd>HyperText Markup Language</dd>
+
+    <dt>CSS</dt>
+    <dd>Cascading Style Sheets</dd>
+</dl>
+
+## 🖼 Media Tags
+Image Tag <img>
+
+Used to display images.
+
+<img src="profile.jpg" alt="Profile Image" width="200">
+
+## Important Attributes
+
+src → Image path
+alt → Alternative text
+width → Image width
+height → Image height
+
+## Audio Tag <audio>
+
+Used to play audio files.
+
+<audio controls>
+    <source src="song.mp3" type="audio/mpeg">
+</audio>
+
+## Video Tag <video>
+
+Used to play videos.
+
+<video width="400" controls>
+    <source src="video.mp4" type="video/mp4">
+</video>
+
+## Source Tag <source>
+
+Used inside audio and video tags.
+
+<source src="song.mp3" type="audio/mpeg">
+
+## Track Tag <track>
+
+Used for subtitles and captions.
+
+<video controls>
+    <source src="movie.mp4" type="video/mp4">
+
+    <track
+        src="subtitle.vtt"
+        kind="subtitles"
+        srclang="en"
+        label="English">
+</video>
+
+# Day 2 Summary
+
+Today I learned:
+
+- Hyperlinks using the anchor tag
+- Unordered lists
+- Ordered lists
+- List items
+- Description lists
+- Image tag
+- Audio tag
+- Video tag
+- Source tag
+- Track tag
+
+I also created a My Profile Page using links, images, and lists.
